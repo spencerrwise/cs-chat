@@ -1,0 +1,17 @@
+<div>
+	<form>
+		<input type="text" placeholder="username" ng-model="username">
+	</form>
+
+	<form>
+		<h3>Add New Room</h3>
+		<input type="text" placeholder="Room Name" ng-model="room.name">
+		<button ng-click="addRoom()">Create New Room</button>
+	</form>
+
+	<div ng-repeat="room in chatRooms">
+			<button ng-click="joinRoom(room)">{{room.name}}</button>
+	</div>
+
+
+</div>
